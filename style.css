@@ -1,0 +1,128 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f4f7fa;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background: #2196F3;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #2196F3, #4CAF50);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.hero button {
+  background: #fff;
+  color: #2196F3;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hero button:hover {
+  background: #f1f1f1;
+}
+
+/* Agent Cards */
+#agents {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+.agent-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.agent-card:hover {
+  transform: scale(1.05);
+}
+.agent-card img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+.agent-card:hover img {
+  transform: scale(1.1);
+}
+.scout { border-top: 5px solid #2196F3; }
+.guardian { border-top: 5px solid #4CAF50; }
+.hunter { border-top: 5px solid #F44336; }
+
+/* Consent Log */
+#consentLog {
+  padding: 40px 20px;
+}
+#consentLog table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#consentLog th, #consentLog td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+#consentLog th {
+  background: #2196F3;
+  color: #fff;
+}
+#consentLog tr:nth-child(even) {
+  background: #f9f9f9;
+}
+#consentLog button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}

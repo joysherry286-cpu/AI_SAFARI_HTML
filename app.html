@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DignityGuard AI – App Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="app.html">App Demo</a></li>
+    </ul>
+  </nav>
+
+  <!-- App Demo Section -->
+  <h1>DignityGuard AI – Live App</h1>
+  <input type="text" id="userInput" placeholder="Type your request here...">
+  <button onclick="scoutCheck()">Submit Request</button>
+
+  <div id="output">
+    <strong>System Output:</strong>
+    <p id="result">No actions yet.</p>
+  </div>
+
+  <!-- Consent Log -->
+  <section id="consentLog">
+    <h2>Consent Log (Audit Trail)</h2>
+    <table id="logTable">
+      <tr>
+        <th>Request</th>
+        <th>Consent</th>
+        <th>Timestamp</th>
+      </tr>
+    </table>
+    <button onclick="downloadLog()">Download Log (CSV)</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 DignityGuard AI | Privacy | Contact</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
